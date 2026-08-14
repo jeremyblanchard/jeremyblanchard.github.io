@@ -367,6 +367,33 @@
                 margin: 0.5em 0 0 1em;
             }
 
+            .project-placeholder {
+                float: left;
+                display: grid;
+                place-items: center;
+                width: 5em;
+                height: 5em;
+                aspect-ratio: 1/1;
+                margin: 0.5em 1em 0 0;
+                overflow: hidden;
+                border-radius: 0.75em;
+                color: #f4f4f4;
+                background:
+                    radial-gradient(circle at 22% 28%, #ff805d 0 4%, transparent 5%),
+                    radial-gradient(circle at 72% 66%, #ff805d 0 6%, transparent 7%),
+                    radial-gradient(circle at 76% 23%, #4ec9b0 0 3%, transparent 4%),
+                    linear-gradient(145deg, #252a33, #101216);
+                box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12);
+                font-weight: 700;
+                font-size: 1.2em;
+                letter-spacing: 0.08em;
+            }
+
+            .project-summary:nth-child(even) .project-placeholder {
+                float: right;
+                margin: 0.5em 0 0 1em;
+            }
+
             .project-summary a {
                 font-weight: 500;
             }
@@ -611,7 +638,7 @@
                                     <span class="project-shortdesc"
                                         >family project</span
                                     >
-                                    • 2026
+                                    • 2026 - ∞
                                     <p>
                                         An iOS, iPadOS, Mac, and web app for
                                         rediscovering your Dropbox photo
@@ -621,6 +648,39 @@
                                         and surface forgotten memories with
                                         T'Now — a daily "on this day" feature
                                         that pulls photos from your archive.
+                                    </p>
+                                </div>
+
+                                <div class="project-summary">
+                                    <a
+                                        href="https://jeremyblanchard.github.io/RedPandaRandomizer/"
+                                        target="_blank"
+                                        aria-label="Open Red Panda Randomizer"
+                                    >
+                                        <span
+                                            class="project-placeholder"
+                                            role="img"
+                                            aria-label="Red Panda Randomizer temporary artwork"
+                                            >RPR</span
+                                        >
+                                    </a>
+                                    <a
+                                        href="https://jeremyblanchard.github.io/RedPandaRandomizer/"
+                                        target="_blank"
+                                        ><strong>Red Panda Randomizer</strong></a
+                                    >
+                                    <span class="project-shortdesc"
+                                        >midi web interface</span
+                                    >
+                                    • 2026
+                                    <p>
+                                        An open-source browser-based randomizer
+                                        and parameter editor for the Red Panda
+                                        Particle 2 granular delay pedal. It
+                                        connects directly over Web MIDI to
+                                        generate and mutate sounds, manage
+                                        presets, and create portable backups —
+                                        all in one dependency-free HTML file.
                                     </p>
                                 </div>
 
